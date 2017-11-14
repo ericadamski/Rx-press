@@ -1,0 +1,31 @@
+{
+  "name": "Rx-press",
+  "version": "0.0.1",
+  "main": "index.js",
+  "repository": "git@github.com:ericadamski/Rx-press.git",
+  "author": "Eric Adamski <er.adamski@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest"
+  },
+  "jest": {
+    "globals": {
+      "__TS_CONFIG__": "tsconfig.json"
+    },
+    "moduleFileExtensions": ["ts", "js"],
+    "transform": {
+      "^.+\\.(ts|tsx)$": "./node_modules/ts-jest/preprocessor.js"
+    },
+    "testMatch": ["**/test/**/*.test.(ts|js)"],
+    "testEnvironment": "node"
+  },
+  "devDependencies": {
+    "prettier": "^1.8.2",
+    "@types/async": "^2.0.40",
+    "@types/jest": "^19.2.2",
+    "@types/node": "^7.0.12",
+    "jest": "^19.0.2",
+    "ts-jest": "^19.0.8",
+    "typescript": "^2.4.0"
+  }
+}
