@@ -6,26 +6,37 @@
   "author": "Eric Adamski <er.adamski@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "build": "tsc",
     "test": "jest"
   },
   "jest": {
     "globals": {
       "__TS_CONFIG__": "tsconfig.json"
     },
-    "moduleFileExtensions": ["ts", "js"],
+    "moduleFileExtensions": [
+      "ts",
+      "js"
+    ],
     "transform": {
       "^.+\\.(ts|tsx)$": "./node_modules/ts-jest/preprocessor.js"
     },
-    "testMatch": ["**/test/**/*.test.(ts|js)"],
+    "testMatch": [
+      "**/*.spec.(ts|js)"
+    ],
     "testEnvironment": "node"
   },
   "devDependencies": {
-    "prettier": "^1.8.2",
     "@types/async": "^2.0.40",
     "@types/jest": "^19.2.2",
     "@types/node": "^7.0.12",
     "jest": "^19.0.2",
+    "morgan": "^1.9.0",
+    "node-mocks-http": "^1.6.6",
+    "prettier": "^1.8.2",
     "ts-jest": "^19.0.8",
     "typescript": "^2.4.0"
+  },
+  "dependencies": {
+    "rxjs": "^5.5.2"
   }
 }
